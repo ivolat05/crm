@@ -161,6 +161,16 @@
 
 .list__num-span {
     color: #230b34;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover {
+        color: #00aad2;
+    }
+}
+
+.list__num-span-active {
+    font-weight: bold;
+    color: #00aad2;
 }
 
 .table__choice-row,
