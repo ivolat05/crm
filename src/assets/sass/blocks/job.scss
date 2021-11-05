@@ -1,0 +1,59 @@
+.panel-sort {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.sort-btn {
+    background: #ffffff;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px 26px;
+    border: none;
+    margin-right: 10px;
+
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 21px;
+
+    transition: 0.4s;
+    &:hover {
+        background: #00aad2;
+        color: #fff;
+    }
+}
+
+.sort--active {
+    background: #00aad2;
+    color: #fff;
+}
+
+.block__wrapp {
+    display: flex;
+    align-items: center;
+}
+
+.block__burger {
+    width: 36px;
+    padding: 9px;
+    background: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    margin-right: 14px;
+}
+
+.block__btn {
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 8px 49px 8px 18px;
+
+    background: url("../../assets/img/arrow.svg") no-repeat center right 17px, #374957;
+    border: 1px solid rgba(55, 73, 87, 0.07);
+
+    border-radius: 5px;
+    cursor: pointer;
+}

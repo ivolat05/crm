@@ -1,0 +1,182 @@
+.table {
+    background: rgba(55, 73, 87, 0.03);
+    border-radius: 10px;
+}
+.table__row {
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    &:hover {
+        background: rgba(0, 170, 210, 0.06);
+    }
+}
+
+.table__body {
+    background: #ffffff;
+    border-radius: 10px;
+    .table__row {
+        align-items: baseline;
+    }
+    .table__btn {
+        img {
+            width: 14px;
+            height: 14px;
+            position: relative;
+            top: 5px;
+        }
+    }
+}
+
+.table__col {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 17px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.table__btn {
+    border: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0);
+    img {
+        width: 14px;
+        height: 14px;
+        position: relative;
+        top: 0;
+    }
+}
+
+.col-1 {
+    width: 40px;
+}
+
+.col-2 {
+    width: 37px;
+}
+
+.col-3 {
+    width: 74px;
+}
+
+.col-4 {
+    width: 122px;
+}
+
+.col-5 {
+    width: 122px;
+}
+
+.col-6 {
+    width: 91px;
+}
+
+.col-7 {
+    width: 80px;
+}
+
+.col-8 {
+    width: 84px;
+}
+
+.col-9 {
+    width: 80px;
+}
+
+.col-10 {
+    width: 117px;
+}
+
+.col-11 {
+    width: 81px;
+}
+
+.table__head {
+    .table__row {
+        padding: 12px 0 8px;
+        color: rgba(55, 73, 87, 0.45);
+    }
+}
+
+.table__body {
+    .table__row {
+        color: #230b34;
+        padding: 21px 0 16px;
+        border-bottom: 1px solid rgba(35, 11, 52, 0.05);
+    }
+}
+
+.table__checkbox {
+    position: relative;
+    cursor: pointer;
+    &::before {
+        content: url("../../assets/img/check.png");
+        position: absolute;
+        top: -3px;
+        left: 0;
+    }
+}
+
+.table__checkbox:checked::before {
+    content: url("../../assets/img/check-active.png");
+}
+
+.table__wrapp {
+    margin-bottom: 20px;
+}
+
+.table__row-checked {
+    background: rgba(0, 170, 210, 0.06);
+}
+
+.table__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table__wrapper-inner {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 10px;
+    color: rgba(35, 11, 52, 0.5);
+}
+
+.table__sum-check {
+    font-weight: 700;
+    color: #00aad2;
+}
+
+.table__sub-row {
+    font-weight: 600;
+    color: rgba(35, 11, 52, 0.5);
+}
+
+.list__num {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 10px;
+    color: rgba(35, 11, 52, 0.5);
+}
+
+.list__num-span {
+    color: #230b34;
+}
+
+.table__choice-row,
+.table__select {
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 10px;
+    color: rgba(35, 11, 52, 0.5);
+}
+
+.table__select {
+    padding: 14px 44px 11px 12px;
+    background: url("../../assets/img/arrow.png") no-repeat center right 15px, #ffffff;
+    border-radius: 5px;
+    color: #230b34;
+    appearance: none;
+    border: none;
+    margin-left: 9px;
+}
