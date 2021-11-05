@@ -1,14 +1,19 @@
 .nav {
     width: 325px;
 }
-.nav__list-inner {
+
+.nav__list-link {
     font-size: 1rem;
     line-height: 21px;
+    color: rgba(55, 73, 87, 0.55);
+}
+
+.nav__list-inner {
     margin-bottom: 12px;
     position: relative;
     padding: 27px 0 27px 81px;
     transition: 0.4s;
-    color: rgba(55, 73, 87, 0.55);
+
     &::before {
         content: url("../../assets/img/nav-1.svg");
         padding: 9px;
@@ -22,10 +27,13 @@
     }
 
     &:hover {
+        .nav__list-link {
+            color: #000;
+        }
         background: #fff;
         box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
         backdrop-filter: blur(21.5519px);
-        color: #000;
+
         border-radius: 5px;
         cursor: pointer;
         &::before {
@@ -33,6 +41,24 @@
             background: #eef2ff;
             border-radius: 5px;
         }
+    }
+}
+
+.header-active.nav__row-1::before {
+    content: url("../../assets/img/nav-1-active.svg");
+    background: #eef2ff;
+    border-radius: 5px;
+}
+
+.header-active {
+    background: #fff;
+    box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
+    backdrop-filter: blur(21.5519px);
+
+    border-radius: 5px;
+    cursor: pointer;
+    .nav__list-link {
+        color: #000;
     }
 }
 
@@ -52,12 +78,31 @@
 .nav__row-2:hover::before {
     content: url("../../assets/img/nav-2-active.svg");
 }
+
+.header-active.nav__row-2::before {
+    content: url("../../assets/img/nav-2-active.svg");
+}
+
 .nav__row-3:hover::before {
     content: url("../../assets/img/nav-3-active.svg");
 }
+
+.header-active.nav__row-3::before {
+    content: url("../../assets/img/nav-3-active.svg");
+}
+
 .nav__row-4:hover::before {
     content: url("../../assets/img/nav-4-active.svg");
 }
+
+.header-active.nav__row-4::before {
+    content: url("../../assets/img/nav-4-active.svg");
+}
+
 .nav__row-5:hover::before {
+    content: url("../../assets/img/nav-5-active.svg");
+}
+
+.header-active.nav__row-5:hover::before {
     content: url("../../assets/img/nav-5-active.svg");
 }
