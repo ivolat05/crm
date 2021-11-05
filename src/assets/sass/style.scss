@@ -8,7 +8,11 @@ body {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    background: #f5f7fb;
+    line-height: 21px;
+    min-height: 100vh;
+    background: url("../../assets/img/back-1.png") no-repeat bottom right,
+        url("../../assets/img/back-2.png") no-repeat bottom right,
+        url("../../assets/img/back-3.png") no-repeat bottom right, #f5f7fb;
 }
 
 * {
@@ -26,3 +30,7 @@ a {
 @import "../sass/blocks/page.scss";
 @import "../sass/blocks/header.scss";
 @import "../sass/blocks/burger.scss";
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/main.scss";
+@import "../sass/blocks/header-2.scss";
+@import "../sass/blocks/start.scss";
