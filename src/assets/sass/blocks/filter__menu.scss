@@ -1,0 +1,103 @@
+.filter__menu {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
+    border-radius: 7px;
+    margin-bottom: 70px;
+    padding: 27px 40px 3px 40px;
+}
+
+.filter__menu-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+.filter__menu-select,
+.filter__menu-input {
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 9px 20px;
+
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 21px;
+    color: rgba(55, 73, 87, 0.5);
+    cursor: pointer;
+}
+
+.filter__menu-input {
+    background: url("../../assets/img/data.svg") no-repeat center right 21px, #f5f7fb;
+}
+
+.filter__menu-select {
+    appearance: none;
+    background: url("../../assets/img/arrow.png") no-repeat center right 16px, #f5f7fb;
+}
+
+.filter__menu-label {
+    position: relative;
+    cursor: pointer;
+}
+
+.filter__label-span {
+    &::before {
+        content: "";
+        position: absolute;
+        width: 46px;
+        height: 26px;
+        top: 50%;
+        left: 9px;
+        transform: translateY(-50%);
+        background: #e7ebf0;
+        border: 0.5px solid rgba(55, 73, 87, 0.16);
+        box-shadow: inset 2.5px 2.5px 5px #a6abbd;
+        border-radius: 50px;
+        transition: 0.4s;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
+        width: 19px;
+        height: 19px;
+        background: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #e7ebf0;
+        border: 0.5px solid rgba(255, 255, 255, 0.4);
+        box-shadow: -2.5px -2.5px 10px rgba(250, 251, 255, 0.4), 2.5px 2.5px 10px #a6abbd;
+        border-radius: 15px;
+        transition: 0.4s;
+    }
+}
+.filter__checkbox {
+    opacity: 0;
+}
+.filter__checkbox:checked + .filter__label-span {
+    &::before {
+        background: #00aad2;
+    }
+    &::after {
+        left: 32px;
+    }
+}
+
+.filter__menu-btn {
+    background: rgba(55, 73, 87, 0.5);
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: #ffffff;
+
+    padding: 9px 31px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.filter-btn-1 {
+    background: #00aad2;
+}
