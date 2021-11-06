@@ -1,0 +1,132 @@
+.fon {
+    width: 100%;
+    min-height: 100%;
+    background: rgba(218, 223, 234, 0.76);
+    position: fixed;
+    top: 0;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: -32px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 0.625rem;
+    color: #374957;
+
+    background: url("../../assets/img/close.svg") no-repeat center left;
+    padding-left: 19px;
+}
+
+.fon__form {
+    position: fixed;
+    width: 498px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: url("../../assets/img/form-1.svg") no-repeat top -60px left -60px,
+        url("../../assets/img/form-2.svg") no-repeat top -60px left -60px,
+        url("../../assets/img/form-3.svg") no-repeat bottom -140px right -140px,
+        url("../../assets/img/form-4.svg") no-repeat bottom -140px right -140px, #ffffff;
+    box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
+
+    border-radius: 10px;
+    padding: 48px 77px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__title {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+    width: 100%;
+    margin-bottom: 13px;
+    border: none;
+    padding: 10px 17px;
+
+    font-weight: 500;
+    font-size: 0.625rem;
+    color: rgba(55, 73, 87, 1);
+    outline: none;
+    background: #f5f7fb;
+    border-radius: 5px;
+    &::placeholder {
+        color: rgba(55, 73, 87, 0.5);
+    }
+}
+
+.form__select {
+    cursor: pointer;
+    appearance: none;
+    color: rgba(55, 73, 87, 0.5);
+    background: url("../../assets/img/arrow.png") no-repeat center right 18px, #f5f7fb;
+}
+
+.form__textarea {
+    resize: none;
+    height: 87px;
+}
+.form-btn {
+    width: 170px;
+    margin: 12px auto 0;
+    font-weight: 600;
+    font-size: 0.75rem;
+    line-height: 21px;
+    color: #fff;
+    padding: 11px 53px 10px;
+    background: #00aad2;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.form__label {
+    padding: 3px 0 16px;
+    position: relative;
+    cursor: pointer;
+}
+
+.form__label-text {
+    font-weight: 500;
+    font-size: 0.75rem;
+    line-height: 21px;
+    color: #374957;
+    &::before {
+        content: url("../../assets/img/check.png");
+        position: absolute;
+        left: 4px;
+        top: 6px;
+    }
+}
+.form__checkbox {
+    opacity: 0;
+}
+.form__checkbox:checked + .form__label-text::before {
+    content: url("../../assets/img/check-active.png");
+}
+
+.popup__client,
+.popup__applicant,
+.popup__employee,
+.popup__status {
+    display: none;
+}
+
+.popup__client-active,
+.popup__applicant-active,
+.popup__employee-active,
+.popup__status-active {
+    display: block;
+}
