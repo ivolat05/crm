@@ -1,0 +1,53 @@
+.directory__title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #230b34;
+    padding-bottom: 35px;
+}
+
+.directory__wrapp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.directory__wrapp-inner {
+    width: 190px;
+}
+
+.directore__inner-list {
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #374957;
+    cursor: pointer;
+    margin-bottom: 22px;
+    padding: 8px 0 7px 15px;
+    width: 185px;
+    position: relative;
+    &:hover {
+        background: #00aad2;
+        border-radius: 3px;
+        font-weight: bold;
+        color: #fff;
+
+        &::after {
+            content: url("../../assets/img/meet-1.svg");
+            position: absolute;
+            top: 0;
+            right: -20px;
+        }
+    }
+}
+
+.direct__list-active {
+    background: #00aad2;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    &::after {
+        content: url("../../assets/img/meet-1.svg");
+        position: absolute;
+        top: 0;
+        right: -20px;
+    }
+}
