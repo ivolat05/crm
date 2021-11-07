@@ -8,6 +8,7 @@
     right: 0;
     z-index: 33;
     padding: 22px 41px;
+    display: none;
 }
 
 .meet__close {
@@ -256,6 +257,7 @@
 }
 
 .meet__emp-btn {
+    cursor: pointer;
     border: none;
     ouline: none;
     background: rgba(0, 0, 0, 0);
@@ -297,4 +299,175 @@
     margin-bottom: 12px;
     font-size: 0.75rem;
     color: #230b34;
+}
+.meet__change-btn {
+    background: #00aad2;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 9px 31px;
+    border: none;
+    cursor: pointer;
+}
+
+.meet__change-employee {
+    display: none;
+}
+
+.meet__wrapper-box {
+    width: 499px;
+    display: flex;
+    flex-direction: column;
+}
+
+.meet__box-btn {
+    display: block;
+    width: 372px;
+    height: 38px;
+    margin: 0 auto 25px;
+    background: #e1e8f8;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    font-weight: 600;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.meet__today {
+    padding: 25px 30px 0 30px;
+    background: #ffffff;
+    border: 1px solid #efefef;
+    border-radius: 10px;
+    margin-bottom: 38px;
+}
+
+.meet__today-wrapp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 38px;
+    padding-bottom: 23px;
+    &::before {
+        content: url("../../assets/img/meet-w.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.meet__today-inner--mess::before {
+    content: url("../../assets/img/meet-mess.svg");
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.meet__wrapp-title {
+    padding-bottom: 22px;
+
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #230b34;
+}
+
+.meet__today-title {
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: #230b34;
+}
+
+.meet__titile-time {
+    font-weight: 500;
+    color: #230b34;
+}
+
+.meet__today-text {
+    font-weight: 500;
+    font-size: 0.625rem;
+}
+
+.meet__today-span::before {
+    content: ">";
+}
+
+.meet__today-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+.meet__today-wrapp-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-left: 38px;
+    padding-bottom: 23px;
+    &::before {
+        content: url("../../assets/img/meet-w-2.svg");
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.meet__today-icon {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #fff;
+    background: #2d8be2;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.meet__page {
+    display: flex;
+    align-items: center;
+}
+
+.meet__today-player {
+    margin-top: 6px;
+    background: linear-gradient(to right, #babee3 40%, rgba(234, 235, 242, 0.42) 40% 60%);
+
+    border-radius: 19px;
+    position: relative;
+
+    padding: 6px 24px 2px 14px;
+}
+
+.meet__plater-time {
+    padding-left: 4px;
+    font-weight: 500;
+    font-size: 0.625rem;
+    line-height: 31px;
+    color: rgba(55, 73, 87, 0.5);
+}
+
+.meet__player-btn {
+    border-radius: 50%;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #00aad2;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    bottom: -7px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meet__mess-span {
+    font-weight: bold;
 }
