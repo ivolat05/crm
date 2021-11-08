@@ -36,6 +36,41 @@ logoWrapp.onclick = () => {
     }
     headerActive.classList.toggle('header-deactive');
 }
+// open chat 
+const message = document.querySelectorAll('.message');
+const chat = document.querySelector('.chat-fon');
+const chatNotific = document.querySelector('.chat-notific');
+const chatNotificClose = document.querySelector('.chat-notific-close');
+const chatClose = document.querySelector('.chat-close');
+const notitfic = document.querySelectorAll('.allert');
+chatNotificClose.onclick = () => {
+    chatNotific.classList.remove('chat-fon-active');
+    document.querySelector('body').classList.remove('stop')
+
+}
+
+chatClose.onclick = () => {
+    chat.classList.remove('chat-fon-active');
+    document.querySelector('body').classList.remove('stop')
+
+}
+
+
+message.forEach((item) => {
+    item.addEventListener('click', function () {
+        chat.classList.add('chat-fon-active');
+        chatNotific.classList.remove('chat-fon-active');
+        document.querySelector('body').classList.add('stop')
+    });
+});
+
+notitfic.forEach((item) => {
+    item.addEventListener('click', function () {
+        chatNotific.classList.add('chat-fon-active');
+        chat.classList.remove('chat-fon-active');
+        document.querySelector('body').classList.add('stop')
+    });
+});
 
 //table-row background-color
 let tableCheckBox = document.querySelectorAll('.table__checkbox');
@@ -53,6 +88,7 @@ tableCheckBox.forEach((item) => {
 
     });
 });
+
 //meet
 let tableCorrect = document.querySelectorAll('.table__correct');
 let meet = document.querySelector('.meet');
@@ -93,42 +129,15 @@ tabsBtn.forEach((item) => {
         currentTab.classList.add('directory__tab--active');
     });
 });
+//filter
 
-// open chat 
-const message = document.querySelectorAll('.message');
-const chat = document.querySelector('.chat-fon');
-const chatNotific = document.querySelector('.chat-notific');
-const chatNotificClose = document.querySelector('.chat-notific-close');
-const chatClose = document.querySelector('.chat-close');
-const notitfic = document.querySelectorAll('.allert');
-chatNotificClose.onclick = () => {
-    chatNotific.classList.remove('chat-fon-active');
-    document.querySelector('body').classList.remove('stop')
+const blockBurger = document.querySelector('.block__burger');
+const filterMenu = document.querySelector('.filter__menu');
 
+blockBurger.onclick = () => {
+    filterMenu.classList.toggle('filter__menu-active')
 }
 
-chatClose.onclick = () => {
-    chat.classList.remove('chat-fon-active');
-    document.querySelector('body').classList.remove('stop')
-
-}
-
-
-message.forEach((item) => {
-    item.addEventListener('click', function () {
-        chat.classList.add('chat-fon-active');
-        chatNotific.classList.remove('chat-fon-active');
-        document.querySelector('body').classList.add('stop')
-    });
-});
-
-notitfic.forEach((item) => {
-    item.addEventListener('click', function () {
-        chatNotific.classList.add('chat-fon-active');
-        chat.classList.remove('chat-fon-active');
-        document.querySelector('body').classList.add('stop')
-    });
-});
 // popup
 
 const blockBtn = document.querySelector('.block__btn');
@@ -144,14 +153,4 @@ blockBtn.onclick = () => {
 closes.onclick = () => {
     fon.classList.remove('popup-active');
     document.querySelector('body').classList.remove('stop');
-}
-
-
-//filter
-
-const blockBurger = document.querySelector('.block__burger');
-const filterMenu = document.querySelector('.filter__menu');
-
-blockBurger.onclick = () => {
-    filterMenu.classList.toggle('filter__menu-active')
 }
