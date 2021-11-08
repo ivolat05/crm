@@ -1,10 +1,15 @@
 .filter__menu {
+    display: none;
     width: 100%;
     background: #ffffff;
     box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
     border-radius: 7px;
     margin-bottom: 70px;
     padding: 27px 40px 3px 40px;
+}
+
+.filter__menu-active {
+    display: block;
 }
 
 .filter__menu-wrapp {
