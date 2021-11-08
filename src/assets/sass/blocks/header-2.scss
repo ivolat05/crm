@@ -47,6 +47,10 @@
         top: -3px;
     }
 }
+
+.allert__non::before {
+    content: "";
+}
 .header-2__wrapp {
     display: flex;
     align-items: center;

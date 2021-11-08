@@ -57,3 +57,7 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.block__btn-active {
+    background: url("../../assets/img/arrow-up.svg") no-repeat center right 17px, #374957;
+}
