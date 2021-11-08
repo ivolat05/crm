@@ -474,3 +474,10 @@
 .meet__mess-span {
     font-weight: bold;
 }
+.meet__emp,
+.meet__change-employee {
+    display: none;
+}
+.meet--active {
+    display: block;
+}

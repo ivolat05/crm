@@ -1,6 +1,21 @@
 //= components/datepicker.min.js
 //= components/jquery.timepicker.min.js
 
+const meetEmpBtn = document.querySelectorAll('.meet__emp-btn');
+
+meetEmpBtn.forEach((item) => {
+    const meetEmp = document.querySelector('.meet__emp');
+    const meetChangeEmployee = document.querySelector('.meet__change-employee');
+    item.addEventListener('click', function () {
+
+        meetEmp.classList.toggle('meet--active');
+        meetChangeEmployee.classList.toggle('meet--active')
+
+
+    });
+});
+
+
 //date
 $('.filter__menu-input').datepicker();
 $('.meet-date').datepicker();
