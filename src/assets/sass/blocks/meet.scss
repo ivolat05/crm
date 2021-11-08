@@ -1,15 +1,19 @@
 .meet {
-    width: 100%;
-    min-height: 100%;
+    width: 1000px;
+    min-height: 100vh;
     background: #ffffff;
     box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
-    position: absolute;
-    top: -50px;
-    right: 0;
+    position: fixed;
+    top: 0;
+    right: 40%;
     z-index: 33;
     padding: 22px 41px;
+    transition: 0.8s;
+    transform: translateX(300%);
 }
-
+.meet-active {
+    transform: translateX(50%);
+}
 .meet__close {
     position: absolute;
     top: 75px;

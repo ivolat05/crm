@@ -158,17 +158,22 @@
 }
 
 .table__checkbox {
-    position: relative;
+    opacity: 0;
+}
+.table__label {
     cursor: pointer;
-    &::before {
-        content: url("../../assets/img/check.png");
-        position: absolute;
-        top: -3px;
-        left: 0;
-    }
+    position: relative;
+    width: 14px;
+    height: 14px;
+}
+.table__label-span::before {
+    content: url("../../assets/img/check.png");
+    position: absolute;
+    top: 0;
+    left: 10px;
 }
 
-.table__checkbox:checked::before {
+.table__checkbox:checked + .table__label-span::before {
     content: url("../../assets/img/check-active.png");
 }
 
@@ -178,6 +183,12 @@
 
 .table__row-checked {
     background: rgba(0, 170, 210, 0.06);
+}
+
+.table__head .table__row-checked,
+.table__head:hover .table__row,
+.table__head .table__row {
+    background: rgba(55, 73, 87, 0.03);
 }
 
 .table__wrapper {

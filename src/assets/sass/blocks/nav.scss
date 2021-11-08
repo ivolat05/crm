@@ -106,3 +106,33 @@
 .header-active.nav__row-5:hover::before {
     content: url("../../assets/img/nav-5-active.svg");
 }
+
+.nav-deactive {
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    margin-left: 53px;
+    .nav__list-link {
+        opacity: 0;
+    }
+    &:hover {
+        padding: 35px;
+        margin-left: 64px;
+        &::before {
+            background: #eef2ff;
+            left: 18px;
+        }
+    }
+}
+
+.header-deactive {
+    padding: 35px;
+    margin-left: 64px;
+    &::before {
+        background: #eef2ff;
+        left: 18px;
+    }
+    .nav__list-link {
+        opacity: 0;
+    }
+}

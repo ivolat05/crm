@@ -126,9 +126,6 @@
     display: none;
 }
 
-.popup__client-active,
-.popup__applicant-active,
-.popup__employee-active,
-.popup__status-active {
+.popup-active {
     display: block;
 }

@@ -11,3 +11,11 @@
     padding: 20px 28px;
     margin-bottom: 60px;
 }
+
+.deactive {
+    width: 200px;
+    flex-direction: column;
+    .logo {
+        margin-bottom: 20px;
+    }
+}

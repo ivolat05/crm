@@ -1,13 +1,19 @@
-.chat-fon {
+.chat-fon,
+.chat-notific {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     background: rgba(218, 223, 234, 0.76);
     position: absolute;
     top: -48px;
     left: -33px;
     z-index: 33;
+    transition: 0.8s;
+    transform: translateX(300%);
 }
 
+.chat-fon-active {
+    transform: translateX(0);
+}
 .chat {
     width: 100%;
     min-height: 100%;
@@ -346,13 +352,4 @@
 .chat-message {
     overflow-y: auto;
     min-height: 45vh;
-}
-
-.chat-notif,
-.chat-window {
-    display: none;
-}
-
-.chat--active {
-    display: block;
 }

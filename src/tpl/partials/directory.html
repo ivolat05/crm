@@ -5,48 +5,429 @@
 
     <div class="directory__wrapp">
         <div class="directory__wrapp-inner">
-            <div class="directore__inner-list direct__list-active">
+            <div class="directore__inner-list direct__list-active" data-tab="#tab_1">
                 Статусы КЦ
             </div>
-            <div class="directore__inner-list">
+            <div class="directore__inner-list" data-tab="#tab_2">
                 Статусы рекритинг
             </div>
-            <div class="directore__inner-list">
+            <div class="directore__inner-list" data-tab="#tab_3">
                 Типы баз КЦ
             </div>
-            <div class="directore__inner-list">
+            <div class="directore__inner-list" data-tab="#tab_4">
                 Источники рекритинг
             </div>
         </div>
         <div class="directory__wrapper">
-            <div class="directory__tab-1">
-                <div class="directory__start">
-                    <div class="directory__wrapper-title">
-                        Начальный статус
+            <div id='tab_1' class="directory__tab">
+                <div class="directory__tab-1">
+                    <div class="directory__start">
+                        <div class="directory__wrapper-title">
+                            Начальный статус
+                        </div>
+                        <div class="directory__row">
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/arrow-right.svg" alt="">
+                                </button>
+                                <span class="directory__num">
+                                    1.
+                                </span>
+                                <div class="directory__row-text">
+                                    Новая
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <button class="directory__row-btn">
+                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                            </button>
+                        </div>
                     </div>
+                    <div class="directory__additionally">
+                        <div class="directory__wrapper-title">
+                            Дополнительные статусы
+                        </div>
+                        <div class="directory__row">
+                            <div class="directory__row-inner">
+                                <div class="table__col">
+                                    <button class="table__btn">
+                                        <img src="./assets/img/burger.svg" alt="">
+                                    </button>
+                                    <div class="table__col-menu">
+                                        <button class='table__menu-btn'>
+                                            Посмотреть встречу
+                                        </button>
+                                        <button class='table__menu-btn table__correct'>
+                                            Редактировать встречу
+                                        </button>
+                                        <button class='table__menu-btn'>
+                                            Удалить встречу
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="directory__num">
+                                    2.
+                                </span>
+                                <div class="directory__row-text">
+                                    Перезвон
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                </button>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="directory__row color-1">
+                            <div class="directory__row-inner">
+                                <div class="table__col">
+                                    <button class="table__btn">
+                                        <img src="./assets/img/burger.svg" alt="">
+                                    </button>
+                                    <div class="table__col-menu">
+                                        <button class='table__menu-btn'>
+                                            Посмотреть встречу
+                                        </button>
+                                        <button class='table__menu-btn table__correct'>
+                                            Редактировать встречу
+                                        </button>
+                                        <button class='table__menu-btn'>
+                                            Удалить встречу
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="directory__num">
+                                    3.
+                                </span>
+                                <div class="directory__row-text">
+                                    Перенос
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                </button>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="directory__row">
+                            <div class="directory__row-inner">
+                                <div class="table__col">
+                                    <button class="table__btn">
+                                        <img src="./assets/img/burger.svg" alt="">
+                                    </button>
+                                    <div class="table__col-menu">
+                                        <button class='table__menu-btn'>
+                                            Посмотреть встречу
+                                        </button>
+                                        <button class='table__menu-btn table__correct'>
+                                            Редактировать встречу
+                                        </button>
+                                        <button class='table__menu-btn'>
+                                            Удалить встречу
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="directory__num">
+                                    4.
+                                </span>
+                                <div class="directory__row-text">
+                                    Подтверждена
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                </button>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="directory__row">
+                            <div class="directory__row-inner">
+                                <div class="table__col">
+                                    <button class="table__btn">
+                                        <img src="./assets/img/burger.svg" alt="">
+                                    </button>
+                                    <div class="table__col-menu">
+                                        <button class='table__menu-btn'>
+                                            Посмотреть встречу
+                                        </button>
+                                        <button class='table__menu-btn table__correct'>
+                                            Редактировать встречу
+                                        </button>
+                                        <button class='table__menu-btn'>
+                                            Удалить встречу
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="directory__num">
+                                    5.
+                                </span>
+                                <div class="directory__row-text">
+                                    Будет
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                </button>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="directory__row color-2">
+                            <div class="directory__row-inner">
+                                <div class="table__col">
+                                    <button class="table__btn">
+                                        <img src="./assets/img/burger.svg" alt="">
+                                    </button>
+                                    <div class="table__col-menu">
+                                        <button class='table__menu-btn'>
+                                            Посмотреть встречу
+                                        </button>
+                                        <button class='table__menu-btn table__correct'>
+                                            Редактировать встречу
+                                        </button>
+                                        <button class='table__menu-btn'>
+                                            Удалить встречу
+                                        </button>
+                                    </div>
+                                </div>
+                                <span class="directory__num">
+                                    6.
+                                </span>
+                                <div class="directory__row-text">
+                                    Пришла
+                                </div>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="directory__row-inner">
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                </button>
+                                <button class="directory__row-btn">
+                                    <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        <button class="diretory__btn-add">
+                            + Добавить статус
+                        </button>
+                    </div>
+
+                    <div class="directory__final">
+                        <div class="directore__final-title">
+                            <div class="drectore__final-title-1">
+                                Успешно
+                            </div>
+                            <div class="drectore__final-title-2">
+                                Финал
+                            </div>
+                            <div class="drectore__final-title-3">
+                                Не успешно
+                            </div>
+                        </div>
+                        <div class="directory__final-wrapp">
+                            <div class="directory__final-good">
+                                <div class="directory__row">
+                                    <div class="directory__row-inner">
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/arrow-right.svg" alt="">
+                                        </button>
+                                        <span class="directory__num">
+                                            7.
+                                        </span>
+                                        <div class="directory__row-text">
+                                            Зачет
+                                        </div>
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <button class="directory__row-btn">
+                                        <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="directory__final-bad">
+
+
+                                <div class="directory__row">
+                                    <div class="directory__row-inner">
+                                        <div class="table__col">
+                                            <button class="table__btn">
+                                                <img src="./assets/img/burger.svg" alt="">
+                                            </button>
+                                            <div class="table__col-menu">
+                                                <button class='table__menu-btn'>
+                                                    Посмотреть встречу
+                                                </button>
+                                                <button class='table__menu-btn table__correct'>
+                                                    Редактировать встречу
+                                                </button>
+                                                <button class='table__menu-btn'>
+                                                    Удалить встречу
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="directory__num">
+                                            8.
+                                        </span>
+                                        <div class="directory__row-text">
+                                            Отменена
+                                        </div>
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="directory__row-inner">
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
+                                        </button>
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/directory-close.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="directory__row">
+                                    <div class="directory__row-inner">
+                                        <div class="table__col">
+                                            <button class="table__btn">
+                                                <img src="./assets/img/burger.svg" alt="">
+                                            </button>
+                                            <div class="table__col-menu">
+                                                <button class='table__menu-btn'>
+                                                    Посмотреть встречу
+                                                </button>
+                                                <button class='table__menu-btn table__correct'>
+                                                    Редактировать встречу
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="directory__num">
+                                            9.
+                                        </span>
+                                        <div class="directory__row-text">
+                                            ФССН
+                                        </div>
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="directory__row-inner">
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/directory-close.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="directory__row">
+                                    <div class="directory__row-inner">
+                                        <div class="table__col">
+                                            <button class="table__btn">
+                                                <img src="./assets/img/burger.svg" alt="">
+                                            </button>
+                                            <div class="table__col-menu">
+                                                <button class='table__menu-btn'>
+                                                    Посмотреть встречу
+                                                </button>
+                                                <button class='table__menu-btn table__correct'>
+                                                    Редактировать встречу
+                                                </button>
+                                                <button class='table__menu-btn'>
+                                                    Удалить встречу
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <span class="directory__num">
+                                            10.
+                                        </span>
+                                        <div class="directory__row-text">
+                                            Брак
+                                        </div>
+                                    </div>
+                                    <div class="directory__row-inner">
+                                        <button class="directory__row-btn">
+                                            <img class="directory__btn-img" src="./assets/img/directory-close.svg"
+                                                alt="">
+                                        </button>
+                                    </div>
+                                </div>
+                                <button class="diretory__btn-add">
+                                    + Добавить статус
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id='tab_2' class="directory__tab"></div>
+
+            <div id='tab_3' class="directory__tab directory__tab-active'">
+                <div class="directory__tab-2">
                     <div class="directory__row">
                         <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/arrow-right.svg" alt="">
-                            </button>
+                            <div class="table__col">
+                                <button class="table__btn">
+                                    <img src="./assets/img/burger.svg" alt="">
+                                </button>
+                                <div class="table__col-menu">
+                                    <button class='table__menu-btn'>
+                                        Посмотреть встречу
+                                    </button>
+                                    <button class='table__menu-btn table__correct'>
+                                        Редактировать встречу
+                                    </button>
+                                    <button class='table__menu-btn'>
+                                        Удалить встречу
+                                    </button>
+                                </div>
+                            </div>
                             <span class="directory__num">
                                 1.
                             </span>
                             <div class="directory__row-text">
-                                Новая
+                                Холодная база
                             </div>
+                        </div>
+                        <div class="directory__row-inner">
                             <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
+                                <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
                             </button>
                         </div>
-                        <button class="directory__row-btn">
-                            <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="directory__additionally">
-                    <div class="directory__wrapper-title">
-                        Дополнительные статусы
                     </div>
                     <div class="directory__row">
                         <div class="directory__row-inner">
@@ -58,7 +439,7 @@
                                     <button class='table__menu-btn'>
                                         Посмотреть встречу
                                     </button>
-                                    <button class='table__menu-btn'>
+                                    <button class='table__menu-btn table__correct'>
                                         Редактировать встречу
                                     </button>
                                     <button class='table__menu-btn'>
@@ -70,23 +451,16 @@
                                 2.
                             </span>
                             <div class="directory__row-text">
-                                Перезвон
+                                Лиды
                             </div>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                            </button>
                         </div>
                         <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                            </button>
                             <button class="directory__row-btn">
                                 <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
                             </button>
                         </div>
                     </div>
-
-                    <div class="directory__row color-1">
+                    <div class="directory__row">
                         <div class="directory__row-inner">
                             <div class="table__col">
                                 <button class="table__btn">
@@ -96,7 +470,7 @@
                                     <button class='table__menu-btn'>
                                         Посмотреть встречу
                                     </button>
-                                    <button class='table__menu-btn'>
+                                    <button class='table__menu-btn table__correct'>
                                         Редактировать встречу
                                     </button>
                                     <button class='table__menu-btn'>
@@ -108,16 +482,10 @@
                                 3.
                             </span>
                             <div class="directory__row-text">
-                                Перенос
+                                Робот
                             </div>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                            </button>
                         </div>
                         <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                            </button>
                             <button class="directory__row-btn">
                                 <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
                             </button>
@@ -134,7 +502,7 @@
                                     <button class='table__menu-btn'>
                                         Посмотреть встречу
                                     </button>
-                                    <button class='table__menu-btn'>
+                                    <button class='table__menu-btn table__correct'>
                                         Редактировать встречу
                                     </button>
                                     <button class='table__menu-btn'>
@@ -146,383 +514,24 @@
                                 4.
                             </span>
                             <div class="directory__row-text">
-                                Подтверждена
+                                Промо
                             </div>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                            </button>
                         </div>
                         <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                            </button>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="directory__row">
-                        <div class="directory__row-inner">
-                            <div class="table__col">
-                                <button class="table__btn">
-                                    <img src="./assets/img/burger.svg" alt="">
-                                </button>
-                                <div class="table__col-menu">
-                                    <button class='table__menu-btn'>
-                                        Посмотреть встречу
-                                    </button>
-                                    <button class='table__menu-btn'>
-                                        Редактировать встречу
-                                    </button>
-                                    <button class='table__menu-btn'>
-                                        Удалить встречу
-                                    </button>
-                                </div>
-                            </div>
-                            <span class="directory__num">
-                                5.
-                            </span>
-                            <div class="directory__row-text">
-                                Будет
-                            </div>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                            </button>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="directory__row color-2">
-                        <div class="directory__row-inner">
-                            <div class="table__col">
-                                <button class="table__btn">
-                                    <img src="./assets/img/burger.svg" alt="">
-                                </button>
-                                <div class="table__col-menu">
-                                    <button class='table__menu-btn'>
-                                        Посмотреть встречу
-                                    </button>
-                                    <button class='table__menu-btn'>
-                                        Редактировать встречу
-                                    </button>
-                                    <button class='table__menu-btn'>
-                                        Удалить встречу
-                                    </button>
-                                </div>
-                            </div>
-                            <span class="directory__num">
-                                6.
-                            </span>
-                            <div class="directory__row-text">
-                                Пришла
-                            </div>
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="directory__row-inner">
-                            <button class="directory__row-btn">
-                                <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                            </button>
                             <button class="directory__row-btn">
                                 <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
                             </button>
                         </div>
                     </div>
                     <button class="diretory__btn-add">
-                        + Добавить статус
+                        + Добавить тип базы
                     </button>
-                </div>
 
-                <div class="directory__final">
-                    <div class="directore__final-title">
-                        <div class="drectore__final-title-1">
-                            Успешно
-                        </div>
-                        <div class="drectore__final-title-2">
-                            Финал
-                        </div>
-                        <div class="drectore__final-title-3">
-                            Не успешно
-                        </div>
-                    </div>
-                    <div class="directory__final-wrapp">
-                        <div class="directory__final-good">
-                            <div class="directory__row">
-                                <div class="directory__row-inner">
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/arrow-right.svg" alt="">
-                                    </button>
-                                    <span class="directory__num">
-                                        7.
-                                    </span>
-                                    <div class="directory__row-text">
-                                        Зачет
-                                    </div>
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                                    </button>
-                                </div>
-                                <button class="directory__row-btn">
-                                    <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                                </button>
-                            </div>
-                        </div>
-                        <div class="directory__final-bad">
-
-
-                            <div class="directory__row">
-                                <div class="directory__row-inner">
-                                    <div class="table__col">
-                                        <button class="table__btn">
-                                            <img src="./assets/img/burger.svg" alt="">
-                                        </button>
-                                        <div class="table__col-menu">
-                                            <button class='table__menu-btn'>
-                                                Посмотреть встречу
-                                            </button>
-                                            <button class='table__menu-btn'>
-                                                Редактировать встречу
-                                            </button>
-                                            <button class='table__menu-btn'>
-                                                Удалить встречу
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <span class="directory__num">
-                                        8.
-                                    </span>
-                                    <div class="directory__row-text">
-                                        Отменена
-                                    </div>
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="directory__row-inner">
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/directory.svg" alt="">
-                                    </button>
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="directory__row">
-                                <div class="directory__row-inner">
-                                    <div class="table__col">
-                                        <button class="table__btn">
-                                            <img src="./assets/img/burger.svg" alt="">
-                                        </button>
-                                        <div class="table__col-menu">
-                                            <button class='table__menu-btn'>
-                                                Посмотреть встречу
-                                            </button>
-                                            <button class='table__menu-btn'>
-                                                Редактировать встречу
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <span class="directory__num">
-                                        9.
-                                    </span>
-                                    <div class="directory__row-text">
-                                        ФССН
-                                    </div>
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/pen.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="directory__row-inner">
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="directory__row">
-                                <div class="directory__row-inner">
-                                    <div class="table__col">
-                                        <button class="table__btn">
-                                            <img src="./assets/img/burger.svg" alt="">
-                                        </button>
-                                        <div class="table__col-menu">
-                                            <button class='table__menu-btn'>
-                                                Посмотреть встречу
-                                            </button>
-                                            <button class='table__menu-btn'>
-                                                Редактировать встречу
-                                            </button>
-                                            <button class='table__menu-btn'>
-                                                Удалить встречу
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <span class="directory__num">
-                                        10.
-                                    </span>
-                                    <div class="directory__row-text">
-                                        Брак
-                                    </div>
-                                </div>
-                                <div class="directory__row-inner">
-                                    <button class="directory__row-btn">
-                                        <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-                            <button class="diretory__btn-add">
-                                + Добавить статус
-                            </button>
-                        </div>
-                    </div>
                 </div>
             </div>
 
+            <div id='tab_4' class="directory__tab"></div>
 
-
-            <!--
-            <div class="directory__tab-2">
-                <div class="directory__row">
-                    <div class="directory__row-inner">
-                        <div class="table__col">
-                            <button class="table__btn">
-                                <img src="./assets/img/burger.svg" alt="">
-                            </button>
-                            <div class="table__col-menu">
-                                <button class='table__menu-btn'>
-                                    Посмотреть встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Редактировать встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Удалить встречу
-                                </button>
-                            </div>
-                        </div>
-                        <span class="directory__num">
-                            1.
-                        </span>
-                        <div class="directory__row-text">
-                            Холодная база
-                        </div>
-                    </div>
-                    <div class="directory__row-inner">
-                        <button class="directory__row-btn">
-                            <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="directory__row">
-                    <div class="directory__row-inner">
-                        <div class="table__col">
-                            <button class="table__btn">
-                                <img src="./assets/img/burger.svg" alt="">
-                            </button>
-                            <div class="table__col-menu">
-                                <button class='table__menu-btn'>
-                                    Посмотреть встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Редактировать встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Удалить встречу
-                                </button>
-                            </div>
-                        </div>
-                        <span class="directory__num">
-                            2.
-                        </span>
-                        <div class="directory__row-text">
-                            Лиды
-                        </div>
-                    </div>
-                    <div class="directory__row-inner">
-                        <button class="directory__row-btn">
-                            <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <div class="directory__row">
-                    <div class="directory__row-inner">
-                        <div class="table__col">
-                            <button class="table__btn">
-                                <img src="./assets/img/burger.svg" alt="">
-                            </button>
-                            <div class="table__col-menu">
-                                <button class='table__menu-btn'>
-                                    Посмотреть встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Редактировать встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Удалить встречу
-                                </button>
-                            </div>
-                        </div>
-                        <span class="directory__num">
-                            3.
-                        </span>
-                        <div class="directory__row-text">
-                            Робот
-                        </div>
-                    </div>
-                    <div class="directory__row-inner">
-                        <button class="directory__row-btn">
-                            <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-
-                <div class="directory__row">
-                    <div class="directory__row-inner">
-                        <div class="table__col">
-                            <button class="table__btn">
-                                <img src="./assets/img/burger.svg" alt="">
-                            </button>
-                            <div class="table__col-menu">
-                                <button class='table__menu-btn'>
-                                    Посмотреть встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Редактировать встречу
-                                </button>
-                                <button class='table__menu-btn'>
-                                    Удалить встречу
-                                </button>
-                            </div>
-                        </div>
-                        <span class="directory__num">
-                            4.
-                        </span>
-                        <div class="directory__row-text">
-                            Промо
-                        </div>
-                    </div>
-                    <div class="directory__row-inner">
-                        <button class="directory__row-btn">
-                            <img class="directory__btn-img" src="./assets/img/directory-close.svg" alt="">
-                        </button>
-                    </div>
-                </div>
-                <button class="diretory__btn-add">
-                    + Добавить тип базы
-                </button>
-
-            </div>
-        -->
             <button class="directory-btn">
                 Сохранить
             </button>

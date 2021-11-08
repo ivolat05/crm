@@ -219,3 +219,9 @@
 .directory__tab-2 {
     margin-bottom: 67px;
 }
+.directory__tab {
+    display: none;
+}
+.directory__tab--active {
+    display: block;
+}
