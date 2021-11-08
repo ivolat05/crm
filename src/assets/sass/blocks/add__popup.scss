@@ -4,6 +4,8 @@
     background: rgba(218, 223, 234, 0.76);
     position: fixed;
     top: 0;
+    position: absolute;
+    z-index: 343;
 }
 
 .close {
