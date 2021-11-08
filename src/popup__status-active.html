@@ -1,0 +1,63 @@
+---
+layout: default
+title: job
+---
+
+<div class="page">
+    <div class="header">
+        <div class="logo__wrapp">
+            <a href="#" class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </a>
+            <div class="burger__wrapp">
+                <img src="./assets/img/burger.svg" alt="" class="burger-img">
+            </div>
+        </div>
+
+        <nav class='nav'>
+            <ul class="nav__list">
+                <li class="nav__list-inner nav__row-1 header-active">
+                    <a href="#" class="nav__list-link">
+                        Рабочая панель
+                    </a>
+                </li>
+                <li class="nav__list-inner nav__row-2">
+                    <a href="#" class="nav__list-link">
+                        Колл - центр
+                    </a>
+                </li>
+                <li class="nav__list-inner nav__row-3">
+                    <a href="#" class="nav__list-link">
+                        Рекрутинг
+                    </a>
+                </li>
+                <li class="nav__list-inner nav__row-4">
+                    <a href="#" class="nav__list-link">
+                        Сотрудники
+                    </a>
+                </li>
+                <li class="nav__list-inner nav__row-5">
+                    <a href="#" class="nav__list-link">
+                        Настройки
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="main">
+        {{>header-2}}
+        <section class="job">
+            {{>panel-sort-job}}
+            {{>block__title-job}}
+            {{>filter__menu}}
+            {{>table-job}}
+        </section>
+    </div>
+
+</div>
+
+
+
+
+{{>popup__status-active}}
