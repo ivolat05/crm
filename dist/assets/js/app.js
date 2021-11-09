@@ -41,16 +41,36 @@ $('.meet-time').timepicker({
 
 // nav
 const logoWrapp = document.querySelector('.logo__wrapp');
+const burgerWrapp = document.querySelector('.burger__wrapp');
 const navListInner = document.querySelectorAll('.nav__list-inner');
 const headerActive = document.querySelector('.header-active');
-logoWrapp.onclick = () => {
-    logoWrapp.classList.toggle('deactive');
-
-    for (let i = 0; i < navListInner.length; i++) {
-        navListInner[i].classList.toggle('nav-deactive');
-    }
-    headerActive.classList.toggle('header-deactive');
+const navClose = document.querySelector('.nav-close');
+navClose.onclick = () => {
+    logoWrapp.classList.remove('deactive');
+    document.querySelector('body').classList.remove('stop');
 }
+
+
+window.addEventListener("resize", function () {
+    if (window.innerWidth >= 992) {
+        burgerWrapp.onclick = () => {
+            logoWrapp.classList.toggle('deactive');
+
+            for (let i = 0; i < navListInner.length; i++) {
+                navListInner[i].classList.toggle('nav-deactive');
+            }
+            headerActive.classList.toggle('header-deactive');
+        }
+
+    } else {
+        burgerWrapp.onclick = () => {
+            logoWrapp.classList.toggle('deactive');
+            document.querySelector('body').classList.add('stop');
+        }
+    }
+});
+
+
 // open chat 
 const message = document.querySelectorAll('.message');
 const chat = document.querySelector('.chat-fon');

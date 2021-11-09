@@ -121,6 +121,7 @@
         &::before {
             background: #eef2ff;
             left: 18px;
+            padding-bottom: 3px;
         }
     }
 }
@@ -131,8 +132,28 @@
     &::before {
         background: #eef2ff;
         left: 18px;
+        padding-bottom: 3px;
     }
     .nav__list-link {
         opacity: 0;
+    }
+}
+.nav-close {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    padding: 0;
+    top: 27px;
+    right: 31px;
+    border: none;
+    display: none;
+    outline: none;
+    z-index: 242234;
+    background: rgba(0, 0, 0, 0);
+
+    img {
+        width: 30px;
+        height: 30px;
+        padding: 0;
     }
 }
