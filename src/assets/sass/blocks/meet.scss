@@ -1,6 +1,5 @@
 .meet {
     width: 1000px;
-    min-height: 100vh;
     background: #ffffff;
     box-shadow: 50px 38px 102.371px rgba(120, 118, 148, 0.14);
     position: fixed;
@@ -10,6 +9,10 @@
     padding: 22px 41px;
     transition: 0.8s;
     transform: translateX(300%);
+}
+.meet-inner {
+    height: 90vh;
+    overflow: auto;
 }
 .meet-active {
     transform: translateX(50%);

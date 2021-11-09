@@ -1,6 +1,7 @@
 .panel-sort {
     display: flex;
-    margin-bottom: 41px;
+    margin-bottom: 26px;
+    flex-wrap: wrap;
 }
 
 .sort-btn {
@@ -14,7 +15,7 @@
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 21px;
-
+    margin-bottom: 15px;
     transition: 0.4s;
     &:hover {
         background: #00aad2;

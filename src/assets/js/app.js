@@ -1,5 +1,6 @@
 //= components/datepicker.min.js
 //= components/jquery.timepicker.min.js
+//= components/jquery.mCustomScrollbar.js
 
 const meetEmpBtn = document.querySelectorAll('.meet__emp-btn');
 
@@ -12,6 +13,13 @@ meetEmpBtn.forEach((item) => {
         meetChangeEmployee.classList.toggle('meet--active')
 
 
+    });
+});
+
+//scroll
+$(window).on("load", function () {
+    $(".table__wrapp").mCustomScrollbar({
+        axis: "x"
     });
 });
 

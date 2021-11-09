@@ -1,7 +1,10 @@
 .table {
+    width: 900px;
     background: rgba(55, 73, 87, 0.03);
     border-radius: 10px;
+    overflow: hidden;
 }
+
 .table__row {
     display: flex;
     align-items: center;
