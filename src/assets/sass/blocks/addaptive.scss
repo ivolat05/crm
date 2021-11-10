@@ -120,6 +120,11 @@
     .chat {
         left: 40px;
     }
+
+    .chat-notific-close,
+    .chat-close {
+        left: 12px;
+    }
 } /*-992px-*/
 @media (max-width: 992px) {
     .deactive + .nav {
@@ -187,13 +192,16 @@
 
     .chat {
         left: 0;
-        .meet__close {
-            left: auto;
-            right: 10px;
-            top: 10px;
-            border-radius: 10px;
-        }
     }
+    .chat-notific-close,
+    .chat-close {
+        left: auto;
+        right: 10px;
+        top: 10px;
+        border-radius: 10px;
+        z-index: 234234234;
+    }
+
     .chat-fon,
     .chat-notific {
         left: 0;
