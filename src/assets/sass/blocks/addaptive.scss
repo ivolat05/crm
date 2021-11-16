@@ -8,7 +8,7 @@
     }
 
     .main {
-        width: 740px;
+        width: 65%;
     }
 
     .header-2__wrapp {
@@ -39,6 +39,20 @@
         padding: 15px 5px 15px 5px;
     }
 }
+
+@media (max-width: 1366px) {
+    .department,
+    .vacancy,
+    .start__wrapp {
+        justify-content: space-evenly;
+    }
+
+    .department-box,
+    .vacancy-box,
+    .start__wrapp-box {
+        margin-right: 10px;
+    }
+}
 /*-1200px-*/
 @media (max-width: 1200px) {
     /*-index-*/
@@ -52,10 +66,6 @@
 
     .header__form {
         width: 320px;
-    }
-
-    .main {
-        width: 616px;
     }
 
     .header-2__wrapp {
@@ -288,8 +298,19 @@
         width: 100%;
     }
 }
+
+@media (max-width: 605px) {
+    .department-box,
+    .vacancy-box,
+    .start__wrapp-box {
+        margin-right: 0;
+    }
+}
 /*-576px-*/
 @media (max-width: 576px) {
+    .login-wrapp {
+        padding-top: 60px;
+    }
     .header__form {
         width: 100%;
         margin-bottom: 15px;
@@ -322,6 +343,9 @@
 }
 
 @media (max-width: 500px) {
+    .login-wrapp {
+        margin: 0 15px;
+    }
     .fon__form {
         width: 100%;
         padding: 15px 15px 15px;
@@ -412,6 +436,14 @@
 }
 
 @media (max-width: 400px) {
+    .department-menu {
+        width: 290px;
+    }
+
+    .login__form {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
     .table__wrapper {
         width: 200px;
         flex-wrap: wrap;

@@ -1,0 +1,241 @@
+.department-block {
+    position: relative;
+}
+.department-menu {
+    width: 299px;
+
+    background: #ffffff;
+    box-shadow: 8px 8px 23px rgba(55, 73, 87, 0.03);
+    border-radius: 10px 0px 10px 10px;
+    padding: 26px 27px;
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 1;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.department-block-btn {
+    position: relative;
+    z-index: 1;
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    font-weight: 500;
+    font-size: 0.75rem;
+    color: #fff;
+    padding: 8px 49px 8px 18px;
+    background: url("../../assets/img/arrow.svg") no-repeat center right 17px, #374957;
+    border: 1px solid rgba(55, 73, 87, 0.07);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.department-block-btn-active {
+    background: url("../../assets/img/arrow-up.svg") no-repeat center right 17px, #374957;
+}
+
+.department-fon {
+    display: none;
+    z-index: 0;
+}
+
+.department-menu-active,
+.department-fon-active {
+    display: block;
+}
+
+.department-input,
+.department-select {
+    margin-bottom: 13px;
+}
+.department-input,
+.department-select,
+.department-textarea {
+    width: 100%;
+    padding: 11px 15px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+
+    color: rgba(55, 73, 87, 0.5);
+
+    background: #f5f7fb;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.department-textarea {
+    resize: none;
+    height: 110px;
+    margin-bottom: 17px;
+}
+
+.department-btn {
+    background: #00aad2;
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 11px 53px;
+
+    color: #ffffff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    display: block;
+}
+
+/*-department-*/
+.department {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.department-box {
+    width: 287px;
+    margin-bottom: 17px;
+    background: #ffffff;
+    box-shadow: 8px 8px 23px rgba(55, 73, 87, 0.03);
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.department-head-titile {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #230b34;
+}
+
+.department-head {
+    padding-left: 22px;
+    padding-right: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.department-head-wrapp {
+    display: flex;
+    align-items: center;
+}
+.department-head-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.department-body {
+    padding: 15px 22px 0 22px;
+    position: relative;
+}
+
+.department-body-title {
+    display: flex;
+    justify-content: start;
+}
+
+.avatar {
+    height: 22px;
+    width: 22px;
+
+    background: #8e2de2;
+    border-radius: 50%;
+    overflow: hidden;
+
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.department-title-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #230b34;
+    padding-left: 7px;
+    padding-bottom: 23px;
+}
+
+.department-slaider-title {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 21px;
+    color: #230b34;
+    padding-bottom: 4px;
+}
+
+.department-slaider {
+    margin-bottom: 12px;
+}
+
+.department-summ {
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 21px;
+    color: rgba(55, 73, 87, 0.5);
+}
+
+.department {
+    .slick-track {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .slick-prev {
+        position: absolute;
+        z-index: -2;
+        opacity: 0;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 0;
+        right: -15px;
+        border: none;
+        cursor: pointer;
+        background: none;
+    }
+}
+
+.department-slaider {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.department-slaider-box {
+    margin-right: 3px;
+}
+
+.department-slaider-bnt {
+    position: absolute;
+    bottom: 40px;
+    right: 15px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

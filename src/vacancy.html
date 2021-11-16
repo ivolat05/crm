@@ -1,0 +1,64 @@
+---
+layout: default
+title: Vacancy
+---
+
+<div class="page">
+    <div class="container">
+        <div class="header">
+            <div class="logo__wrapp">
+                <a href="#" class="logo">
+                    <img src="./assets/img/logo.png" alt="">
+                </a>
+                <div class="burger__wrapp">
+                    <img src="./assets/img/burger.svg" alt="" class="burger-img">
+                </div>
+                <button class="nav-close">
+                    <img src="./assets/img/close.svg" alt="">
+                </button>
+            </div>
+            <nav class='nav'>
+                <ul class="nav__list">
+                    <li class="nav__list-inner nav__row-1">
+                        <a href="#" class="nav__list-link">
+                            Рабочая панель
+                        </a>
+                    </li>
+                    <li class="nav__list-inner nav__row-2">
+                        <a href="#" class="nav__list-link">
+                            Колл - центр
+                        </a>
+                    </li>
+                    <li class="nav__list-inner nav__row-3 header-active">
+                        <a href="#" class="nav__list-link">
+                            Рекрутинг
+                        </a>
+                    </li>
+                    <li class="nav__list-inner nav__row-4">
+                        <a href="#" class="nav__list-link">
+                            Сотрудники
+                        </a>
+                    </li>
+                    <li class="nav__list-inner nav__row-5">
+                        <a href="#" class="nav__list-link">
+                            Настройки
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        <div class="main">
+            {{>header-2}}
+            <section class="job-2">
+                {{>panel-sort-vacancy}}
+                {{>block__title-vacancy}}
+                {{>vacancy}}
+
+            </section>
+            {{>chat}}
+            {{>chat-notific}}
+            {{>meet}}
+        </div>
+    </div>
+</div>

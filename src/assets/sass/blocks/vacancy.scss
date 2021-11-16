@@ -1,0 +1,60 @@
+.vacancy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.vacancy-box {
+    width: 287px;
+    display: inline-block;
+    background: #ffffff;
+    box-shadow: 8px 8px 23px rgba(55, 73, 87, 0.03);
+    border-radius: 10px;
+
+    padding: 18px 22px 17px 22px;
+    margin-bottom: 39px;
+}
+
+.vacancy-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.vacancy__head-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 21px;
+    color: #374957;
+}
+
+.vacancy-body {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #230b34;
+    padding-bottom: 10px;
+}
+
+.vacancy-status--open,
+.vacancy-status--close,
+.vacancy-status--temporary {
+    background: #1dc419;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+
+    color: #ffffff;
+    padding: 3px 7px;
+    display: inline-block;
+}
+
+.vacancy-status--close {
+    background: #d21414;
+}
+.vacancy-status--temporary {
+    background: #c9b714;
+}
