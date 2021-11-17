@@ -1,14 +1,13 @@
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 50px 50px 70px 50px;
+    padding: 50px 15px 70px 15px;
     display: flex;
     justify-content: space-between;
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
     .container {
         max-width: 1350px;
-        padding: 50px 15px 70px 15px;
     }
 }

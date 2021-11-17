@@ -1,18 +1,4 @@
 .main {
-    width: 69%;
+    width: 928px;
     position: relative;
-    margin-left: 20px;
-}
-
-@media (max-width: 1440px) {
-    .main {
-        width: 928px;
-        position: relative;
-    }
-}
-
-@media (max-width: 1380px) {
-    .main {
-        margin-left: 0;
-    }
 }

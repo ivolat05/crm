@@ -5,12 +5,7 @@
 @import "../sass/vendor/jquery.mCustomScrollbar.scss";
 
 html {
-    font-size: 24px;
-}
-@media (max-width: 1440px) {
-    html {
-        font-size: 16px;
-    }
+    font-size: 16px;
 }
 
 body {
