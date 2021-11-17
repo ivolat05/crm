@@ -1,5 +1,11 @@
 .header {
-    width: 325px;
+    width: 425px;
+}
+
+@media (max-width: 1400px) {
+    .header {
+        width: 325px;
+    }
 }
 
 .logo__wrapp {

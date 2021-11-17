@@ -1,25 +1,53 @@
 .recruit__row {
     .col-2 {
-        width: 191px;
+        width: 255px;
     }
 
     .col-3 {
-        width: 132px;
+        width: 196px;
     }
 
     .col-4 {
-        width: 113px;
+        width: 177px;
     }
 
     .col-5 {
-        width: 135px;
+        width: 199px;
     }
 
     .col-6 {
-        width: 156px;
+        width: 220px;
     }
 
     .col-7 {
-        width: 128px;
+        width: 192px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .recruit__row {
+        .col-2 {
+            width: 191px;
+        }
+
+        .col-3 {
+            width: 132px;
+        }
+
+        .col-4 {
+            width: 113px;
+        }
+
+        .col-5 {
+            width: 135px;
+        }
+
+        .col-6 {
+            width: 156px;
+        }
+
+        .col-7 {
+            width: 128px;
+        }
     }
 }

@@ -1,8 +1,17 @@
 .table {
-    width: 928px;
+    width: 1315px;
     background: rgba(55, 73, 87, 0.03);
     border-radius: 10px;
     overflow: hidden;
+}
+
+@media (max-width: 1440px) {
+    .table {
+        width: 928px;
+        background: rgba(55, 73, 87, 0.03);
+        border-radius: 10px;
+        overflow: hidden;
+    }
 }
 
 .table__row {
@@ -101,48 +110,50 @@
     }
 }
 
-.col-1 {
-    width: 40px;
-}
+@media (max-width: 1440px) {
+    .col-1 {
+        width: 40px;
+    }
 
-.col-2 {
-    width: 37px;
-}
+    .col-2 {
+        width: 37px;
+    }
 
-.col-3 {
-    width: 74px;
-}
+    .col-3 {
+        width: 74px;
+    }
 
-.col-4 {
-    width: 122px;
-}
+    .col-4 {
+        width: 122px;
+    }
 
-.col-5 {
-    width: 122px;
-}
+    .col-5 {
+        width: 122px;
+    }
 
-.col-6 {
-    width: 91px;
-}
+    .col-6 {
+        width: 91px;
+    }
 
-.col-7 {
-    width: 80px;
-}
+    .col-7 {
+        width: 80px;
+    }
 
-.col-8 {
-    width: 84px;
-}
+    .col-8 {
+        width: 84px;
+    }
 
-.col-9 {
-    width: 80px;
-}
+    .col-9 {
+        width: 80px;
+    }
 
-.col-10 {
-    width: 117px;
-}
+    .col-10 {
+        width: 117px;
+    }
 
-.col-11 {
-    width: 81px;
+    .col-11 {
+        width: 81px;
+    }
 }
 
 .table__head {

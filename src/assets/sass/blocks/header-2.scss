@@ -1,6 +1,12 @@
 .header__form {
-    width: 415px;
+    width: 60%;
     position: relative;
+}
+@media (max-width: 1440px) {
+    .header__form {
+        width: 415px;
+        position: relative;
+    }
 }
 
 .header__input {

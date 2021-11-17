@@ -1,5 +1,11 @@
 .nav {
-    width: 325px;
+    width: 425px;
+}
+
+@media (max-width: 1440px) {
+    .nav {
+        width: 325px;
+    }
 }
 
 .nav__list-link {

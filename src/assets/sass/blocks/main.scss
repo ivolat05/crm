@@ -1,4 +1,11 @@
 .main {
-    width: 928px;
+    width: 74%;
     position: relative;
+}
+
+@media (max-width: 1440px) {
+    .main {
+        width: 928px;
+        position: relative;
+    }
 }
