@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Department
+title: project
 ---
 
 <div class="page">
@@ -17,6 +17,7 @@ title: Department
                     <img src="./assets/img/close.svg" alt="">
                 </button>
             </div>
+
             <nav class='nav'>
                 <ul class="nav__list">
                     <li class="nav__list-inner nav__row-1">
@@ -29,12 +30,12 @@ title: Department
                             Колл - центр
                         </a>
                     </li>
-                    <li class="nav__list-inner nav__row-3 header-active">
+                    <li class="nav__list-inner nav__row-3">
                         <a href="#" class="nav__list-link">
                             Рекрутинг
                         </a>
                     </li>
-                    <li class="nav__list-inner nav__row-4">
+                    <li class="nav__list-inner nav__row-4 header-active">
                         <a href="#" class="nav__list-link">
                             Сотрудники
                         </a>
@@ -50,21 +51,17 @@ title: Department
         </div>
         <div class="main">
             {{>header-2}}
-            <section class="job-2">
-                {{>panel-sort-department}}
-                {{>block__title-department}}
-                {{>department}}
+            <section class="job">
+                {{>panel-sort-project}}
+                {{>block__title-project}}
 
             </section>
             {{>chat}}
             {{>chat-notific}}
-            {{>meet}}
         </div>
     </div>
 </div>
-<div class="fon department-fon">
 
-</div>
 <script>
     const departmentBlockBtn = document.querySelector('.department-block-btn');
     departmentBlockBtn.onclick = () => {
