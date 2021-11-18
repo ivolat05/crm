@@ -136,7 +136,7 @@
                             <button class="block__burger">
                                 <img src="./assets/img/burger.svg" alt="" class="burger-img">
                             </button>
-                            <button class="block__btn ">
+                            <button class="block__btn">
                                 Добавить встречу
                             </button>
                         </div>
@@ -1497,7 +1497,100 @@
                 </div>
             </section>    </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <div class="fon popup__meeting">
+        <div class="popup__meeting-wrapp">
+            <form class="fon__form">
+                <button class="close">
+                    Закрыть
+                </button>
+                <h3 class="form__title">
+                    Добавить встречу
+                </h3>
+                <div class="meeting__row">
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            Оператор
+                        </div>
+                        <select class="meeting__select">
+                            <option class="meeting__select-option">Абрезина Ирина</option>
+                            <option class="meeting__select-option">Абрезина Ирина</option>
+                            <option class="meeting__select-option">Абрезина Ирина</option>
+                        </select>
+                    </div>
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            Статус
+                        </div>
+                        <select class="meeting__select">
+                            <option class="meeting__select-option">Новая</option>
+                            <option class="meeting__select-option">Новая</option>
+                            <option class="meeting__select-option">Новая</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="meeting__row-2">
+                    <div class="meeting__row-2-title">
+                        Дата и время приема
+                    </div>
+                    <input class='meeting-date' type="text" placeholder="дд,мм,гггг">
+                    <div class="meetign__time-col">
+                        <input class='meeting-hour' type="text" placeholder="09">
+                        <input class='meeting-min' type="text" placeholder="00">
+                    </div>
+                </div>
+    
+                <div class="meeting__row">
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            Телефон
+                        </div>
+                        <input type="text" class="meeting-input" placeholder="Введите">
+                    </div>
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            Возраст
+                        </div>
+                        <input type="text" class="meeting-input" placeholder="Введите">
+                    </div>
+                </div>
+                <div class="meeting__row-3">
+                    <div class="meeting__col-title">
+                        ФИО
+                    </div>
+                    <input type="text" class="meeting-input" placeholder="Введите">
+                </div>
+                <div class="meeting__row">
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            Офис
+                        </div>
+                        <input class="meeting-input" type="text" placeholder="Ростов">
+                    </div>
+                    <div class="meeting__col">
+                        <div class="meeting__col-title">
+                            База
+                        </div>
+                        <select class="meeting__select">
+                            <option class="meeting__select-option">Робот IVR</option>
+                            <option class="meeting__select-option">Робо</option>
+                            <option class="meeting__select-option">Лиды</option>
+                            <option class="meeting__select-option">Холодная</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="meeting__row-3">
+                    <div class="meeting__col-title">
+                        Комментарий маркетинга
+                    </div>
+                    <textarea class='meeting-textarea' placeholder="Введите"></textarea>
+                </div>
+    
+                <button class="form-btn " type='submit'>
+                    Добавить
+                </button>
+            </form>
+        </div>
+    </div>    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/app.min.js"></script>
 </body>
 

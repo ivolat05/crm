@@ -52,6 +52,9 @@
     .start__wrapp-box {
         margin-right: 10px;
     }
+    .klient__input {
+        width: 220px;
+    }
 }
 /*-1200px-*/
 @media (max-width: 1200px) {
@@ -123,6 +126,10 @@
 
     .main-directory {
         width: 700px;
+    }
+
+    .klient__input {
+        width: 200px;
     }
 }
 
@@ -299,6 +306,46 @@
     }
 }
 
+@media (max-width: 715px) {
+    .popup__meeting {
+        .fon__form {
+            width: 98%;
+        }
+    }
+}
+
+@media (max-width: 658px) {
+    .meeting__row,
+    .meeting__row-2,
+    .meeting__row-3 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .klient__inner-col-1 {
+        flex-direction: column;
+        .klient__input {
+            width: 100%;
+        }
+    }
+    .klient__inner-col-2 {
+        margin-left: 0;
+    }
+    .klient__inner {
+        flex-direction: column;
+    }
+    .klient__input {
+        width: 100%;
+    }
+
+    .klient__wrapp {
+        flex-direction: column;
+    }
+    .klient__wrapp-col {
+        padding-bottom: 20px;
+    }
+}
+
 @media (max-width: 605px) {
     .department-box,
     .vacancy-box,
@@ -308,6 +355,18 @@
 }
 /*-576px-*/
 @media (max-width: 576px) {
+    .meeting__row,
+    .meeting__row-2,
+    .meeting__row-3 {
+        flex-direction: column;
+        .meeting__col {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+    .meeting-date {
+        margin-bottom: 20px;
+    }
     .login-wrapp {
         padding-top: 60px;
     }

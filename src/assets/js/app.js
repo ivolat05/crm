@@ -3,6 +3,7 @@
 //= components/jquery.mCustomScrollbar.js
 
 
+
 const meetEmpBtn = document.querySelectorAll('.meet__emp-btn');
 
 meetEmpBtn.forEach((item) => {
@@ -27,9 +28,11 @@ $(window).on("load", function () {
 });
 
 
+
 //date
 $('.filter__menu-input').datepicker();
 $('.meet-date').datepicker();
+$('.meeting-date').datepicker();
 
 //date
 $('.meet-time').timepicker({
@@ -38,6 +41,21 @@ $('.meet-time').timepicker({
     minTime: '0',
     maxTime: '23:59',
     startTime: '00:00',
+});
+$('.meeting-hour').timepicker({
+    timeFormat: 'H',
+    interval: 1,
+    minTime: '0',
+    maxTime: '23',
+    startTime: '00',
+});
+
+$('.meeting-min').timepicker({
+    timeFormat: 'mm',
+    interval: 1,
+    minTime: '0',
+    maxTime: '59',
+    startTime: '00',
 });
 
 // nav
