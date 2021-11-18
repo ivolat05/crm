@@ -2,9 +2,18 @@
     width: 928px;
     background: rgba(55, 73, 87, 0.03);
     border-radius: 10px;
-    overflow: hidden;
+    margin-bottom: 90px;
 }
 
+.table__wrapper {
+    margin-top: -80px;
+    position: relative;
+    z-index: 2342;
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    top: -85px;
+}
 .table__row {
     display: flex;
     align-items: center;
@@ -69,7 +78,7 @@
 
 .table__col:hover .table__col-menu {
     opacity: 1;
-    z-index: 3;
+    z-index: 3333333333333;
 }
 
 .table__menu-btn {

@@ -1,5 +1,6 @@
 .department-block {
     position: relative;
+    z-index: 4;
 }
 .department-menu {
     width: 299px;
@@ -40,7 +41,10 @@
 
 .department-fon {
     display: none;
-    z-index: 0;
+    position: fixed;
+    z-index: 3;
+    width: 68%;
+    right: 0;
 }
 
 .department-menu-active,

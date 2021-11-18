@@ -1,0 +1,41 @@
+.table-project-row {
+    cursor: pointer;
+    .table__col {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .col-1 {
+        width: 54px;
+    }
+
+    .col-2 {
+        width: 181px;
+    }
+
+    .col-3 {
+        width: 303px;
+    }
+
+    .col-4 {
+        width: 206px;
+    }
+
+    .col-5 {
+        width: 163px;
+    }
+}
+.table__menu-btn {
+    padding: 0 0 15px 0;
+    font-weight: 500;
+    font-size: 0.875rem;
+}
+
+.table-project-active {
+    color: #00aad2;
+}
+
+.green {
+    background: #239719;
+}

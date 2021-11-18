@@ -144,6 +144,9 @@
     }
 } /*-992px-*/
 @media (max-width: 992px) {
+    .department-fon {
+        width: 100%;
+    }
     .deactive + .nav {
         transform: translateY(0);
     }

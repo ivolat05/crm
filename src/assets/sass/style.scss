@@ -3,7 +3,7 @@
 @import "../sass/vendor/jquery.timepicker.min.scss";
 @import "../sass/blocks/container.scss";
 @import "../sass/vendor/jquery.mCustomScrollbar.scss";
-z html {
+html {
     font-size: 16px;
 }
 
@@ -55,4 +55,5 @@ a {
 @import "../sass/blocks/block__klient-add.scss";
 @import "../sass/blocks/table-klient.scss";
 @import "../sass/blocks/block__title-project.scss";
+@import "../sass/blocks/table-project.scss";
 @import "../sass/blocks/addaptive.scss";
