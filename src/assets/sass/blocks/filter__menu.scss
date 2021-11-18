@@ -33,6 +33,10 @@
     cursor: pointer;
 }
 
+.filter__menu-inner {
+    display: flex;
+}
+
 .filter__menu-input {
     background: url("../../assets/img/data.svg") no-repeat center right 21px, #f5f7fb;
 }
@@ -89,6 +93,10 @@
     }
 }
 
+.filter__menu-inner:nth-child(1) {
+    margin-right: 30px;
+}
+
 .filter__menu-btn {
     background: rgba(55, 73, 87, 0.5);
     border-radius: 5px;
@@ -101,6 +109,7 @@
     border: none;
     outline: none;
     cursor: pointer;
+    margin-left: 10px;
 }
 
 .filter-btn-1 {

@@ -2585,7 +2585,10 @@ window.addEventListener("resize", function () {
         }
     }
 });
-
+burgerWrapp.onclick = () => {
+    logoWrapp.classList.toggle('deactive');
+    document.querySelector('body').classList.add('stop');
+}
 
 // open chat 
 const message = document.querySelectorAll('.message');

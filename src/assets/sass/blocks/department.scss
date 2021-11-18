@@ -72,7 +72,9 @@
     border: none;
     outline: none;
 }
-
+.department-select {
+    background: url("../../assets/img/arrow.png") no-repeat center right 16px, #f5f7fb;
+}
 .department-textarea {
     resize: none;
     height: 110px;
